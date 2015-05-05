@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.payUMoney.sdk.fragment.PaymentOptionsFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_box"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/couponSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:visibility="gone"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectCoupon1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/select_coupon_option"
+        android:textColor="#d3d3d3"
+        android:layout_margin="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectCoupon"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/view_coupon"
+            android:textColorLink="#c56100"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:orientation="vertical"
+        android:id="@+id/lv1"
+        android:visibility="gone"
+
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:button="@drawable/checkbox_green"
+            android:id="@+id/walletcheck"
+            android:textColor="#6ac451"
+            android:text="Use PayUMoney wallet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:id="@+id/wallettext"
+            
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"
+            android:text="You have x RS in your wallet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:id="@+id/walletbalance"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"
+            android:text="You have x RS remaining in your wallet"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/listviewrl"
+    android:layout_height="wrap_content">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1.0sp"
+        android:layout_marginBottom="32sp"
+        android:id="@+id/paymentOptionsListView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_gravity="center"
+        android:src="@drawable/security_icons"
+        android:layout_above="@+id/minconfee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/minconfee"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/paymentOptionsListView"
+        android:text="** Min conv fee"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#6ac451"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:id="@+id/walletpayment"
+        android:text="Pay Now"
+        android:textColor="#ffffff"
+        android:background="@drawable/button"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_other_option"
+        android:id="@+id/useNewCardButton"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:background="@drawable/button_other_option"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_gravity="center"
+        android:src="@drawable/security_icons"/>
+
+</LinearLayout>
+

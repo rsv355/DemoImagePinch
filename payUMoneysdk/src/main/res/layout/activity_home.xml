@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!--  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"    >-->
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/headerLayout">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/green_app_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#666362"
+            android:textStyle="bold"
+            android:hint="Rs"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/amountTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headerLayout"  >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="savings"
+        android:visibility="gone"
+        android:id="@+id/savings"
+        android:textColor="#6ac451"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/payupoints"
+        android:gravity="center"
+        android:layout_below="@+id/savings"
+        android:textSize="14dp"
+        android:text="points"
+        android:textColor="#6ac451"/>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#666362"
+        android:id="@+id/paymentmethod"
+        android:text="Select Payment Method"
+        />
+
+    <TextView
+        android:id="@+id/amountDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textColorLink="#c56100"
+        android:text="@string/view_details"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/amountDetails"
+        android:background="#d3d3d3"></LinearLayout>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_below="@+id/offerMessageTextView"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

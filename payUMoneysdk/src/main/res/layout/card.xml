@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_background"
+    android:orientation="vertical"
+    android:id="@+id/cardLayout"
+    >
+
+    <!--<ImageView-->
+    <!--android:id="@+id/icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/card" />-->
+    <LinearLayout
+        android:id="@+id/carddata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/twenty"
+         android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen"
+        android:paddingTop="@dimen/sixteen">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/four"
+        android:paddingLeft="0dp"
+        android:paddingRight="@dimen/four"
+        android:paddingTop="@dimen/four"
+        android:src="@drawable/card" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/four"
+            android:paddingLeft="0dp"
+            android:paddingRight="@dimen/four"
+            android:paddingTop="@dimen/four"
+            android:src="@drawable/error_icon" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cvvBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+       >
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:hint="@string/cvv"
+            android:inputType="numberPassword">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/pay"
+            android:id="@+id/makePayment"
+            android:layout_weight=".5"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/cvv_number"
+        android:paddingLeft="@dimen/fiftySix"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_cvv_number" />
+    <TextView
+        android:id="@+id/cvv_number_optional"
+        android:paddingLeft="@dimen/fiftySix"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_cvv_number_optional" />
+</LinearLayout>
+</LinearLayout>

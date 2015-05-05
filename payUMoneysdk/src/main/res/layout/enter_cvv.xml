@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvvBox"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/fiftySix"
+    android:paddingRight="@dimen/sixteen"
+    android:paddingTop="@dimen/one">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:ems="10"
+            android:layout_margin="1dp"
+              android:inputType="number">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/pay"
+            android:id="@+id/makePayment"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

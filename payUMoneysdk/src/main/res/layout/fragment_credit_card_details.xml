@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.payu.sdk.fragments.CreditCardDetailsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/card_details_layout"/>
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pb"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/makePayment"
+            android:text="@string/pay_now"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:enabled="false"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_other_option"
+            android:id="@+id/useNewCardButton"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_other_option"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:src="@drawable/security_icons"/>
+    </LinearLayout>
+
+</ScrollView>
+
